@@ -1,0 +1,37 @@
+class Param
+{
+    public void Add(int a,int b)
+    {
+        Console.WriteLine("Addition of Two Integers");
+        Console.WriteLine(a+b);
+    }
+    public void Add(int c,string d)
+    {
+        Console.WriteLine("Adding of integer and String");
+        Console.WriteLine(c+d);
+    }
+    public void Add(int x,int y,int z)
+    {
+        Console.WriteLine("Addition of Three Integers");
+        Console.WriteLine(x + y + z);
+    }
+    public void Add(string s,int m = 10, int n = 20)
+    {
+        Console.WriteLine("Addition of String and declared variables");
+        Console.WriteLine(s + m + n);
+    }
+
+}
+class Exe
+{
+     static void Main(String[] args)
+    {
+        Param par = new Param();
+        par.Add(1,2);
+        par.Add(10, " Chandu ");
+        par.Add(10, 20, 30);
+        par.Add(b: 10, a: 100);
+        par.Add(d:"Siriveli",c:50);
+        par.Add("chandu");
+    }
+}
